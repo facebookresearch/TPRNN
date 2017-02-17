@@ -1,7 +1,7 @@
 # Target Propagation for Recurrent Neural Networks (TPRNN)
 
 This is a self contained software accompanying the paper titled: Training
-Language Models using Target-Propagation: link available shortly.
+Language Models using Target-Propagation, available at https://arxiv.org/abs/1702.04770.
 The code allows you to reproduce our results on two language modeling
 datasets, Penntree Bank and Text8, using various training methods.
 

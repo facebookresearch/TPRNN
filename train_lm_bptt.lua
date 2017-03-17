@@ -23,7 +23,7 @@ local utils = dofile('utils.lua')
 
 local cmd = torch.CmdLine()
 -- * Dataset parameters
-cmd:option('-dset'       , 'ptbc' , 'name of the dataset')
+cmd:option('-dset'       , 'ptbc' , 'name of the dataset; options {ptbc|ptbw|wikitext2|wikitext-103_large}')
 cmd:option('-dpath'      , ''     , 'path where binary files are stored')
 -- * Model parameters.
 cmd:option('-model'      , 'LSTM' , 'Type of recurrent net: RNN|LSTM|GRU')

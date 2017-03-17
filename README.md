@@ -40,7 +40,7 @@ Text8 with following hyper-parameters:
 
 type:
 ```
-th -i train_lm_tprop.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1
+th -i train_lm_admm.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1
 ```
 
 * To train a single layer GRU with ALM for word-level language modeling on
@@ -53,7 +53,7 @@ Text8 with following hyper-parameters:
 
 type:
 ```
-th -i train_lm_tprop.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1 -alm
+th -i train_lm_admm.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1 -alm
 ```
 
 * To train a single layer GRU with PM for word-level language modeling on
@@ -66,7 +66,7 @@ Text8 with following hyper-parameters:
 
 type:
 ```
-th -i train_lm_tprop.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1 -u_startupdate 50000
+th -i train_lm_admm.lua -dset text8w -model GRU -nhid 100 -block_size 10 -batchsz 32 -param_lr 0.05 -h_lr 1 -u_startupdate 50000
 ```
 
 To list all the options available, you need to type
@@ -76,7 +76,7 @@ th train_lm_bptt.lua --help
 or
 
 ```
-th train_lm_tprop.lua --help
+th train_lm_admm.lua --help
 ```
 
 
@@ -96,7 +96,7 @@ Download the files in an appropriate directory and run the code from there. See 
 
 ## How Target Propagation for Recurrent Neural Networks Software works
 The top level file for standard BPTT training is called train_lm_bptt.lua
-The top level file for target-prop training is called train_lm_tprop.lua
+The top level file for target-prop training is called train_lm_admm.lua
 
 In order to run the code you need to run the file using torch. For example:
 
@@ -106,7 +106,7 @@ th -i train_lm_bptt.lua -<option1_name> option1_val -<option2_name> option2_val 
 or
 
 ```
-th -i train_lm_tprop.lua -<option1_name> option1_val -<option2_name> option2_val ...
+th -i train_lm_admm.lua -<option1_name> option1_val -<option2_name> option2_val ...
 ```
 
 In order to check what all options are available, type
@@ -117,7 +117,7 @@ th -i train_lm_bptt.lua --help
 or
 
 ```
-th -i train_lm_tprop.lua --help
+th -i train_lm_admm.lua --help
 ```
 
 

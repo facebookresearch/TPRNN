@@ -3,7 +3,7 @@
 This is a self contained software accompanying the paper titled: Training
 Language Models using Target-Propagation, available at https://arxiv.org/abs/1702.04770.
 The code allows you to reproduce our results on two language modeling
-datasets, Penntree Bank and Text8, using various training methods.
+datasets, Penntree Bank (character and word) and wikitext, using various training methods.
 
 
 The code implements the following training algorithsm for RNNs:
